@@ -91,4 +91,4 @@ links a lot of different devices, you could just connect two with homeassistant)
     3. After restarting home assistant you should be able to enable/ disable/ do other stuff with your zigbie devices.
 
 4. ### Setup EQ3 Max!
-    1. Follow [this](https://www.home-assistant.io/integrations/maxcube/) tutorial to setup the EQ3 max
+    1. Follow [this](https://www.home-assistant.io/integrations/maxcube/) tutorial to setup the EQ3 max!
