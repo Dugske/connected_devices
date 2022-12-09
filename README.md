@@ -156,4 +156,12 @@ links a lot of different devices, you could just connect two with homeassistant)
 
     * Connect the external I/O to the router
 
+    * Connect your laptop to the router (via ethernet)
+
+    * [Download](https://www.advantech.com/en/support/details/utility?id=1-2AKUDB) the most recent version.
+
+    * Open the ADAM/APAX utility software, and press the searchglass.
     
+    * Let it search the network
+
+    * When it finds the device, you can select it, and
