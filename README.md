@@ -15,6 +15,15 @@
         <li><a href="#products-i-used">Products I used</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#setup">Setup</a>
+      <ul>
+        <li><a href="#setup-a-server">Server</a></li>
+        <li><a href="#setup-zigbie-devices">Zigbie devices</a></li>
+        <li><a href="#setup-eq3-max">EQ3 Max!</a></li>
+        <li><a href="#setup-a-visiologic-plc">PLC</a></li>
+      </ul>
+    </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -89,9 +98,11 @@ links a lot of different devices, you could just connect two with homeassistant)
 
     </details>
 
-3. ### Setup Zigbie devices
+* ### Setup Zigbie devices
     <details>
         <summary></summary>
+
+    1. Connect zigbie gateway to the router
 
     1. Install the Tuya smart home app, and add your devices in there
 
@@ -101,10 +112,10 @@ links a lot of different devices, you could just connect two with homeassistant)
     </details>
 
 
-4. ### Setup EQ3 Max!
+* ### Setup EQ3 Max!
     1. Follow [this](https://www.home-assistant.io/integrations/maxcube/) tutorial to setup the EQ3 max!
 
-5. ### Setup a (visiologic) plc.
+* ### Setup a (visiologic) plc.
     <details>
         <summary></summary>
         <p>First in the project settings add these settings: </p>
@@ -137,4 +148,12 @@ links a lot of different devices, you could just connect two with homeassistant)
     [Here](PLC-Modbus-Code-Steps.zip) are the steps recorded.
 
     </details>
+    
+* ### Setup external ethernet I/O (ADAM 5000)
+    <details>
+        <summary></summary>
+    </details>
+
+    * Connect the external I/O to the router
+
     
