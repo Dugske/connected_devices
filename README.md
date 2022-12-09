@@ -92,3 +92,10 @@ links a lot of different devices, you could just connect two with homeassistant)
 
 4. ### Setup EQ3 Max!
     1. Follow [this](https://www.home-assistant.io/integrations/maxcube/) tutorial to setup the EQ3 max!
+
+5. ### Setup a (visiologic) plc.
+    First in the project settings add these settings: ![IP Address: 192.168.0.28, Protocol: TCP, Port Number: 20256, PLC Name: PLC Name](IP-Project-Settings.png)
+    > You can use your own IP address and a custom name
+
+    This is the code I used to setup the PLC
+    ![](Full-PLC-Code.png)
