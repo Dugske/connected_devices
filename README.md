@@ -70,6 +70,8 @@ links a lot of different devices, you could just connect two with homeassistant)
 
 
 2. ### Setup a server
+    <details>
+        <summary></summary>
     <br/>
 
     > For a <a href="#desktop">desktop server</a>, for a <a href="#pinecone">pinecone A64</a>.
@@ -85,22 +87,54 @@ links a lot of different devices, you could just connect two with homeassistant)
     * ### Pinecone:
         * WIP
 
+    </details>
+
 3. ### Setup Zigbie devices
+    <details>
+        <summary></summary>
+
     1. Install the Tuya smart home app, and add your devices in there
+
     2. Follow [this](https://www.home-assistant.io/integrations/tuya/) tutorial to setup tuya with homeassistant
+
     3. After restarting home assistant you should be able to enable/ disable/ do other stuff with your zigbie devices.
+    </details>
+
 
 4. ### Setup EQ3 Max!
     1. Follow [this](https://www.home-assistant.io/integrations/maxcube/) tutorial to setup the EQ3 max!
 
-<details>
-    <summary>5. Setup a (visiologic) plc.</summary>
-    <p>First in the project settings add these settings: </p>
-    <img src="IP-Project-Settings.png">IP Address: 192.168.0.28, Protocol: TCP, Port Number: 20256, PLC Name: PLC Name</img> ![IP Address: 192.168.0.28, Protocol: TCP, Port Number: 20256, PLC Name: PLC Name](IP-Project-Settings.png)
-> You can use your own IP address and a custom name
+5. ### Setup a (visiologic) plc.
+    <details>
+        <summary></summary>
+        <p>First in the project settings add these settings: </p>
+        <img src="IP-Project-Settings.png" alt="IP Address: 192.168.0.28, Protocol: TCP, Port Number: 20256, PLC Name: PLC Name"/>
+    <blockquote> You can use your own IP address and a custom name </blockquote>
+    
+    [Here](PLC-Modbus-Project-Settings-Steps.zip) are the steps recorded.
 
-This is the code I used to setup the PLC
-![](Full-PLC-Code.png)
+    <hr></hr>
 
-</details>
+    This is the code I used to setup the PLC:
+    ![](Full-PLC-Code.png)
+
+    <details>
+        <summary>Settings</summary>
+
+    The card init settings are these:
+        ![](PLC-Code-Card-Init.png)
+
+    The socket 1 settings are these:
+    ![](PLC-Code-Socket-1.png)
+
+    The socket 2 settings are these:
+    ![](PLC-Code-Socket-2.png)
+
+    The socket 3 settings are these:
+    ![](PLC-Code-Socket-3.png)
+    </details>
+
+    [Here](PLC-Modbus-Code-Steps.zip) are the steps recorded.
+
+    </details>
     
