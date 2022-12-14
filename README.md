@@ -164,6 +164,57 @@ links a lot of different devices, you could just connect two with homeassistant)
     
     * Let it search the network
 
-    * When it finds the device, you can select it, and change the IP address.
+    * When it finds the device, you can select it, go to the network tab and you can change/ see the IP address.
 
     [Here](steps_pdf/AdvantechSetupSteps.pdf) are the steps recorded.
+
+    * Now in homeassistant add the file editor plugin and change the `configuration.yaml`, we will be adding mobus lines there! You can use [this](https://www.home-assistant.io/integrations/modbus/) to find more info about the below commands!
+
+    ### The code:
+
+    ```
+    modbus:
+      - name: NAME
+      close_comm_on_error: true
+      type: tcp
+      host: IP_ADDRESS
+      port: 502
+    ```
+
+    The slave number is like the key, you start with 1, and with every different thing you check, you add +1
+
+    The address is the place where the sensor is 'stored' in the adam, you can check it using the tool
+
+    ### Reading digital outputs:
+    ```
+    binary_sensors:
+      - name: NAME
+        address: 1
+        slave: 1
+        scan_interval: 20
+        unique_id: NAME
+    ```
+    ### Writing digital inputs:
+    ```
+    switches:
+      - name: NAME
+        address: 12
+        slave: 2
+        write_type: coil
+        unique_id: NAME
+    ```
+    ### Reading analog outputs:
+    ```
+    sensors:
+      - name: NAME
+        slave: 3
+        address: 43
+        input_type: holding       
+        state_class: measurement       
+        count: 1       
+        scale: 1       
+        offset: 0       
+        precision: 1       
+        data_type: int16
+        unique_id: NAME
+    ```
