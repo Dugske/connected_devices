@@ -119,33 +119,33 @@ links a lot of different devices, you could just connect two with homeassistant)
     <details>
         <summary></summary>
         <p>First in the project settings add these settings: </p>
-        <img src="IP-Project-Settings.png" alt="IP Address: 192.168.0.28, Protocol: TCP, Port Number: 20256, PLC Name: PLC Name"/>
+        <img src="images/IP-Project-Settings.png" alt="IP Address: 192.168.0.28, Protocol: TCP, Port Number: 20256, PLC Name: PLC Name"/>
     <blockquote> You can use your own IP address and a custom name </blockquote>
     
-    [Here](PLC-Modbus-Project-Settings-Steps.zip) are the steps recorded.
+    [Here](steps_pdf/VisioLogicModbusSetupProjectSteps.pdf) are the steps recorded.
 
     <hr></hr>
 
     This is the code I used to setup the PLC:
-    ![](Full-PLC-Code.png)
+    ![](images/imagesFull-PLC-Code.png)
 
     <details>
         <summary>Settings</summary>
 
     The card init settings are these:
-        ![](PLC-Code-Card-Init.png)
+        ![](images/PLC-Code-Card-Init.png)
 
     The socket 1 settings are these:
-    ![](PLC-Code-Socket-1.png)
+    ![](images/PLC-Code-Socket-1.png)
 
     The socket 2 settings are these:
-    ![](PLC-Code-Socket-2.png)
+    ![](images/PLC-Code-Socket-2.png)
 
     The socket 3 settings are these:
-    ![](PLC-Code-Socket-3.png)
+    ![](images/PLC-Code-Socket-3.png)
     </details>
 
-    [Here](PLC-Modbus-Code-Steps.zip) are the steps recorded.
+    [Here](steps_pdf/VisioLogicModbusSetupCodeSteps.pdf) are the steps recorded.
 
     </details>
     
@@ -164,4 +164,6 @@ links a lot of different devices, you could just connect two with homeassistant)
     
     * Let it search the network
 
-    * When it finds the device, you can select it, and
+    * When it finds the device, you can select it, and change the IP address.
+
+    [Here](steps_pdf/AdvantechSetupSteps.pdf) are the steps recorded.
